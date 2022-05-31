@@ -1,0 +1,93 @@
+body {
+    font-family:'Lucida Sans';
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+}
+
+button {
+    width: 300px;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+}
+
+.contenedor-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 35px;
+
+}
+
+.contenedor-input {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    gap: 2px;
+    justify-content: center;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 2px;
+    justify-content: space-evenly;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ico-ok, .ico-error, .ico-trash {
+    font-size: larger;
+}
+
+.ico-ok {
+    color: #008000;
+}
+
+.ico-error {
+    color: #000000;
+}
+
+.ico-trash {
+    display: none;
+}
+
+.lista-vacia {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tarea {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 0.5fr;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-items: center;
+}
+
+.tarea:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.tarea:hover .ico-trash {
+    display: inline;
+    color: #000;
+}
