@@ -17,6 +17,7 @@ button {
     font-family: 'Lucida Sans';
 }
 
+
 .contenedor-general {
     display: flex;
     flex-direction: column;
@@ -27,6 +28,12 @@ button {
     padding: 35px;
 
 }
+
+@media (max-width: 600px) {
+    .contenedor-general {
+        width: 80%;
+    }
+  }
 
 .contenedor-input {
     display: flex;
